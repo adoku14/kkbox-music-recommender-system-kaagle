@@ -1,0 +1,12 @@
+
+Details for each file in submission.
+1 - count_artist_song.py -> this file show the code of counting the occurrence of songs and artist in each line continuosly, also counting the ratio (song or artist played/ number of row at that moment).
+2 - kmeans_cluster.py -> This file show the clustering method applied to cluster songs as explained in report. using Kmeans and some features to cluster songs, help the final model to have a score above 70% on kaggle.
+3- lda_file.py -> this file is the lda clustering method implemented and saving in a file each for each topic the songs assigned. 
+4- lda_preprocess.py -> This file read the output file from lda_file.py and write a file ready to use to lightgbm model, have song_id and all topics where a specific songs is assigned as features. then it is merged with lightgbm model. Moreover testing only those features, gave 57% score in kaggle.
+5- Lightgbm.py -> this file is the best lightgbm model before baturay new score genres features. here it is applied future engineering techniques as explained in report to improve the model.
+6- score_msno_to_cluster.py -> this file explaines the score calculation for each user to each cluster. this file helped the hybrid model scoring better then using matrix factorization approach. using only those 20 scores as features + 3 features from train.csv scored 64% in kaggle.
+
+Note: i am not submitting all the file that i have tried, but i am focusing more only on those file that gave to us a good result. i have also worked on tensorflow which was not successful by me side to have a good implementation and a good result. 
+
+

@@ -1,0 +1,36 @@
+My notes during this course.
+
+1. first try to implement tensorflow with neural network with 1 layer, but it result to 0.58 accuracy.
+also this gave me an error which stands unsolved with batch size. putting batch size 50-100 it fill all my memory.
+
+2- spent time implementing the deepneural classifier in which was not so optimized and also gave a lower accuracy.
+
+3- trying to implement SVM using scikit learn, from that i learned that SVM with kernel "rb" took more then 8 hours and not finished.
+
+4- searching for an imputer function which will fill null values in data in efficient way, found imputer function from scikit-learn.
+
+4- i chose to move on in another way, starting working with lgbm kernel, trying to optimize
+
+5 getting the code from olivier submission, adding some new features from isrc attribute result in better accuracy, 0.67688 the best till 5/11/2017
+
+6-trying to improve accuracy getting new features splitting the genres done by armando and testing the accuracy.. genres with null values improved the score.
+
+7 implementing lda to cluster. using lda of scikit-learn resutl in memorry array due ti large memory of matrix 0,1 used for each user/song_id. nr_user = 30776 and nr_songid 359966,,.... 
+
+8-implementing gensim lda is still in running stage, no answer about that. this was only a test.
+
+using lda topics as features but this lead to a worst score compared with what we had.
+
+- using only msno, user_id and lda topics as features, using 10, 50 , 100 topics as features. this lead to 0.57 score in kaggle. 100 topics result better then others, but it is a bad idea to add 100 new features in our train set cus this will overfit the set..
+
+- adding new features from kernel result in better score, 0.687 which is best till 17/11/2017
+
+9- cluster songs using kmeans, and the features in songs.csv, then for each user i check how many songs this user listen to each cluster and put a score(count in this case) for each user. 
+
+10 -testing clusters using 20 clusters and calculating its scores resulted in a score 67% te best. using old features and cluster number assigned result in a slightly improvement of the score in kaagle.
+
+11- counting continuously in each line the song played and artist count adding 2 new features giving a ratio song_played/nr row iteration till that moment.
+
+12-  splitting various artist accourding genres and calculating a probability of artist in a specific genre, but the result was not improving the score, scoring worst nearly 0.1 % 
+
+13- trying to play with source_type, source_Screen_name, source_System_type features, adding new boolean features, whether a value in this columns is more towards target 1.
