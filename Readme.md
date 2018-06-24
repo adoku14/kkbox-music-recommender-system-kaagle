@@ -1,3 +1,11 @@
+# Info 
+This is a group project for a Master Course in University of Antwerp called Data Science Project. We were registered in a online competition in kaggle website named kkbox Music Recommendation System. The final Ranking of our group is 42 out of 1081 teams. My contribution in this project are:
+
+- LGBM model and feature Engineering
+- Using clustering for creating new features which importantly improved the score
+
+We have used a lot of strategies but we ended up with the best models as discribed below
+
 # Generating the Predictions
 
 Our final submission combines predictions from four independent models:
