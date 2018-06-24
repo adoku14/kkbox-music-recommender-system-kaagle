@@ -18,8 +18,7 @@ Our final submission combines predictions from four independent models:
 To make it easy to tweak each model independently, each has its own script
 that outputs a csv file with predictions. These scripts are
 lightGBM_genreCount_0_6940.py, cf-mf/factorization.py and logistic.py. The
-script for the clustering model went missing, its predictions (and those of
-the other models) can be found on studento.
+script for the clustering model are kmeans_cluster.py, outputing the csv file with clusters. Afterwards, run score_msno_to_cluster.py to get a score for each user in each cluster. 
 
 Once you have the prediction files for the four models, run hybrid.py to
 combine the predictions and output the final csv file.
